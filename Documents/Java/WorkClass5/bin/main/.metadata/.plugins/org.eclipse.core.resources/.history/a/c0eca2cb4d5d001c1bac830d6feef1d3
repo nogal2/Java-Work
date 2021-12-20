@@ -1,0 +1,10 @@
+package cls;
+
+public class ChildClass extends ParentClass {
+	
+	private double height;
+	
+	public void chileMethod() {
+		System.out.println("ChildClass chileMethod()");
+	}
+}

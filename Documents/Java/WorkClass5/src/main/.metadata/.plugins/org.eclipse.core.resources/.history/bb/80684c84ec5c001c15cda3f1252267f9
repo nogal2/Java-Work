@@ -1,0 +1,20 @@
+package study;
+
+public class Armor {
+	private String name;
+	private int height;
+	
+	public Armor() {
+		
+	}
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+}

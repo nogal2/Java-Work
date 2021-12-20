@@ -1,0 +1,24 @@
+package main;
+
+import cls.MyClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	
+		/*
+			static:	정적	<=> 동적(dynamic)
+			
+			variable
+			method
+		*/
+		
+		MyClass cls = new MyClass();
+		
+		cls.func();
+		cls.func();	// local 변수는 마지막 중괄호를 벗어나면서 저장된 수가 삭제되고 다시 시작했을때 초기화된 0부터 시작해서 1이나온다.
+		cls.func();
+		cls.func();
+	}
+
+}

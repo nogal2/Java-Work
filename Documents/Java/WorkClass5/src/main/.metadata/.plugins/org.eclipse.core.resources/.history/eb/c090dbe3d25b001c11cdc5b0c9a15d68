@@ -1,0 +1,26 @@
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		// NullPointerException:			동적할당이 안 된 경우
+		String str = null;
+		/*try {
+		
+		}catch (NullPointerException e) {
+		//	e.printStackTrace();
+			System.out.println("str은 할당되지 않았습니다");
+		}*/
+		System.out.println(str.length());
+		// ArrayIndexOutOfboundsException:	배열 범위가 초과한 경우
+		
+		// FileNotFoundException: 			파일이 없는 경우
+		
+		// StringIndexOutOfBoundsException:	문자열 길이가 넘어갔을때
+		
+		// NumBerFormatException:			숫자가 아닌 경우
+		
+		// 
+	}
+
+}

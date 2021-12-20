@@ -1,0 +1,12 @@
+package main;
+
+import mycls.MyClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Myclass cls = new MyClass();
+
+	}
+
+}

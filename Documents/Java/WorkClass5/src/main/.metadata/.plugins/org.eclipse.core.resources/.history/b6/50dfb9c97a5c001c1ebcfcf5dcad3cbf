@@ -1,0 +1,52 @@
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+			
+			Object Oriented Programming
+			객체		지향		
+			
+			구조, 관리는 객체지향
+			흐름은 절차지향
+			
+			객체 지향 특징
+			
+			1. 은닉성(캡슐화)
+			2. 상속성
+			3. 다형성
+			
+			형식:
+				class 클래스명 {
+					variable
+					
+					method
+					
+				}
+				=> 클래스의 설계도, 클래스의 선언부
+										
+			
+		*/
+		
+		// class, array -> allocation(동적할당)	-> Heap 에 저장됨.
+		MyClass cls; //= new MyClass();
+	//	자료형	클래스의 변수 == 객체, object,
+	//			instance(주체) = 실질적으로 메모리 위에 올라가는 주체(stack에 저장됨)
+		
+		cls.method();
+	}
+
+}
+
+//선언만 해놓은 기본형태
+class MyClass {
+	int number;
+	String name;
+	
+	void method() {
+		System.out.println("MyClass method()");
+	}
+}
+
+
+

@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Menu >>>");
+		System.out.println("1. 10���� -> 2������ ����");
+		System.out.println("2. 10���� -> 8������ ����");
+		System.out.println("3. 10���� -> 16������ ����");
+		System.out.println("4. 2���� -> 10������ ����");
+		System.out.println("5. 8���� -> 10������ ����");
+		System.out.println("6. 16���� -> 10������ ����");
+		System.out.print("���Ͻô� ó�� ��ȣ�� �Է��� �ּ��� >> ");
+		int work = sc.nextInt();
+		System.out.print("�����ϰ� ���� ���ڸ� �Է����ּ��� >> ");
+		String numStr = sc.next();
+		
+		switch(work) {
+			case 1:
+				//int menu1 = Integer.parseInt(numStr);
+				//String num2 = Integer.toBinaryString(menu1);
+				int menu1;
+				String num2;
+				num2 = decToBin(numStr);
+				System.out.println("10���� " + numStr + "�� 2������ " + num2 + "�Դϴ�");
+				break;
+			case 2:
+				int menu2 = Integer.parseInt(numStr);
+				String num8 = Integer.toOctalString(menu2);
+				System.out.println("10���� " + numStr + "�� 8������ " + num8 + "�Դϴ�");
+				break;
+			case 3:
+				int menu3 = Integer.parseInt(numStr);
+				String num16 = Integer.toHexString(menu3);
+				System.out.println("10���� " + numStr + "�� 8������ " + num16 + "�Դϴ�");
+				break;
+			case 4:
+				int A = Integer.parseInt(numStr, 2);
+				System.out.println("2���� " + numStr + "�� 10������ " + A + "�Դϴ�");
+				break;
+			case 5:
+				int B = Integer.parseInt(numStr, 8);
+				System.out.println("8���� " + numStr + "�� 10������ " + B + "�Դϴ�");
+				break;
+			case 6:
+				int C = Integer.parseInt(numStr, 16);
+				System.out.println("16���� " + numStr + "�� 10������ " + C + "�Դϴ�");
+				break;
+		}
+	}
+	
+	static String decToBin(String numStr) {
+		int menu1 = Integer.parseInt(numStr);
+		String num2 = Integer.toBinaryString(menu1);
+		return num2;
+	}
+
+}

@@ -1,0 +1,27 @@
+package constructor;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+			constructor:	생성자
+							객체(instance) 생성시에 호출.
+							메소드
+							클래스명과 같다.
+							return값이 없다.
+							overload가 가능하다.
+							생략이 가능하다.
+							별도의 호출이 불가능하다. 딱 한번 호출됨.
+							맨 첫번째 값만 넣어 주는 용도.
+			
+			destructor:		소멸자 < - X
+			
+		*/
+		
+		int array[] = { 11, 22, 33};	// 배열 초기화
+	//	MyClass cls = {11, "홍길동"};		// 클래스에서는 초기화가 불가능. 그래서 constructor가 나왔다. 초기화하기 위해 나온 것.
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package main;
+
+import cls.NameCard;
+import cls.PrintNameCard;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		NameCard namecard = new NameCard("홍길동", "123-4567", "hgd@naver.com");
+		
+		namecard.setPrintCard(new PrintNameCard());
+		namecard.print();
+
+	}
+
+}

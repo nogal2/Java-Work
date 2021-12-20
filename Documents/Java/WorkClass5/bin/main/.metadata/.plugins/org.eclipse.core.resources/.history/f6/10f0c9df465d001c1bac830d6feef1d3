@@ -1,0 +1,12 @@
+package main;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		//MyClass cls = new MyClass();
+		MyClass cls1 = new MyClass();
+		
+
+	}
+
+}

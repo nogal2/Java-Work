@@ -1,0 +1,16 @@
+package study;
+
+public class self {
+
+	public static void main(String[] args) {
+		// for문 i는 증가 ㅊ출력은 역출력
+		
+		int k = 10;
+		for(int i=0; i > 10; i++ ) {
+			k -= k-i;
+			System.out.println(k);
+		}
+
+	}
+
+}

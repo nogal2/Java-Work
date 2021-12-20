@@ -1,0 +1,35 @@
+package study;
+
+import java.util.Scanner;
+
+public class for1110 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int sum[] = null;
+		int i=0;
+		while(true) {
+			if(N<10) {
+				while(true) {
+					sum[i] = sum[i] + ((N%10)*10)+((N/10)+(N%10));
+					i++;
+					if (sum[i] == N) {
+						break;
+					}
+				}
+				System.out.print(i);
+				break;
+			}
+			
+			if(N>10) {
+				while(true) {
+					if()
+				}
+			}
+		}
+	}
+		
+}
+
+

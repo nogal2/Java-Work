@@ -1,0 +1,28 @@
+package cls;
+
+public class Circle extends Shape {
+	double r;	// 반지름
+	
+	
+	public Circle (double r) {
+		
+	}
+	
+	@Override
+	double calcArea() {
+		
+		return 0;
+	}
+
+	
+	
+
+
+
+	
+
+	
+	
+	
+	
+}

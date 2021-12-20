@@ -1,0 +1,12 @@
+package study;
+
+import jdk.internal.org.jline.utils.InputStreamReader;
+
+public class BufferdedReader {
+
+	public static void main(String[] args) {
+		BufferdedReader br= new BufferdedReader(new InputStreamReader(System.in));
+
+	}
+
+}

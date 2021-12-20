@@ -1,0 +1,25 @@
+
+public class work1Class {
+	
+	
+	void Student() {
+		String name = "홍길동";
+		int ban = 1;
+		int no = 1;
+		int kor = 100;
+		int eng = 60;
+		int math = 76;
+		
+		System.out.println("이름:" + name);
+		System.out.println("총점:" + getTotal(kor, eng, math));
+		System.out.println("이름:" + getAverage());
+	}
+	
+	void getTotal (int kor, int eng, int math) {
+		int sum = kor+eng+math;
+		
+	}
+	void getAverage () {
+		int avg = sum/3;
+	}
+}

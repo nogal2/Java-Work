@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;study.forwhile2741&apos; to &apos;for2741&apos;&#x0D;&#x0A;- Original project: &apos;study&apos;&#x0D;&#x0A;- Original element: &apos;study.forwhile2741&apos;&#x0D;&#x0A;- Renamed element: &apos;study.for2741&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;forwhile2741&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;study{forwhile2741.java[forwhile2741" matchStrategy="1" name="for2741" qualified="false" references="true" similarDeclarations="false" stamp="1639060722507" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,29 @@
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+			Over Load:	함수 명은 같고 매개변수(parameter)의 자료형이나 갯수가 다른 것을 의미한다. (동명이인이라고 생각하면 된다)
+			
+			예)
+			paint():	image drawing
+			paint(int x, int y)
+			paint(int z)
+			paint(char c)
+			paint(char c, int i)
+			paint(int i, char c)
+			
+			paint(int n, char ch) X -> 위에것과 비교해보면 인수만 다르다. 이건 안된다.
+			int paint(int i, char c) X -> 리턴값만 다른것도 안된다.
+			=> 함수는 같지만 매개변수들이 다 다름. 컴파일러에서는 다른 함수로 취급한다. 그래서 다른함수는 매개변수로 구분한다.
+			
+			
+		*/
+
+		method();
+	}
+	
+	static void method() {
+		System.out.println("method()");
+	}
+}

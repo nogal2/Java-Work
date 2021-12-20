@@ -1,0 +1,14 @@
+package cls2;
+
+public class Student extends Human {
+	
+	
+	public Student() {
+		
+	}
+	
+	public Student(String name, int age, int height, int weight, String num) {
+		super(name, age, height, weight, num);
+	}
+
+}

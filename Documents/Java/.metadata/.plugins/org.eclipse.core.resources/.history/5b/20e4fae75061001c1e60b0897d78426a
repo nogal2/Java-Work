@@ -1,0 +1,47 @@
+package study;
+
+import java.util.Scanner;
+
+public class array2577 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int div[] = {100000000, 10000000, 1000000, 100000, 10000, 1000, 100, 10, 1};
+		int num[] = new int[9];
+		int abc;
+		/* for(int i=0; i < 9; i++){
+			num[i] = abc % div[i]
+			if(num[i] == abc) {
+				num[i] = -1
+				an[i] = -1
+			}
+			else {
+				abc = abc - (num[i] * div[i])
+			}
+			  num[0] = -1	an[0] = -1
+			  num[1] = -1	an[1] = -1
+			  num[2] = 9		abc=483239
+			  num[3] = 4		abc=83239
+			  num[4] = 8		abc=3239
+			  num[5] = 3		abc=239
+			  num[6] = 2		abc=39
+			  num[7] = 3		abc=9
+			  num[8] = 9		abc=0
+	 
+		   }
+		*/
+		for(int i=0; i < 9; i++){
+			num[i] = a*b*c % div[i];
+			if(num[i] == a*b*c) {
+				num[i] = -1;
+			}
+			else {
+				abc = a*b*c - (num[i] * div[i]);
+			}
+
+		}
+	}
+}

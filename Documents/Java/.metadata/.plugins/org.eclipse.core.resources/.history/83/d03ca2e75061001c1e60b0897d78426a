@@ -1,0 +1,10 @@
+package movie;
+
+public class MovieWork extends Movie{
+	
+
+	@Override 
+	public void display() { //여기를 구현하세요. 
+				
+	}
+}

@@ -1,0 +1,11 @@
+package cls;
+
+class Marine extends Unit {// 보병
+	
+	public void move() {
+		move(x,y);
+		stop();
+	} 
+	void stop() { /* 현재  위치에  정지  */ }
+	void stimPack() {System.out.println("스팀팩한다.");}
+}

@@ -1,0 +1,8 @@
+package cls;
+
+public class Unit {
+	int x , y;
+	public void move() { System.out.println("move"); }// 현재  위치	
+	void move(int x, int y) { /* 지정된  위치로  이동  */ }
+	void stop() { System.out.println("stop"); }
+}

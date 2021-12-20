@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\갈\Documents\java\Wrapper"/>
+			<item value="C:\Users\갈\Documents\java\Work5"/>
+			<item value="C:\Users\갈\Documents\java\while"/>
+			<item value="C:\Users\갈\Documents\java\switch"/>
+			<item value="C:\Users\갈\Documents\java\study"/>
+			<item value="C:\Users\갈\Documents\java\String"/>
+			<item value="C:\Users\갈\Documents\java\Sorting"/>
+			<item value="C:\Users\갈\Documents\java\Scan"/>
+			<item value="C:\Users\갈\Documents\java\practice"/>
+			<item value="C:\Users\갈\Documents\java\operator"/>
+			<item value="C:\Users\갈\Documents\java\Number281016"/>
+			<item value="C:\Users\갈\Documents\java\Number"/>
+			<item value="C:\Users\갈\Documents\java\Method1"/>
+			<item value="C:\Users\갈\Documents\java\Method"/>
+			<item value="C:\Users\갈\Documents\java\if"/>
+			<item value="C:\Users\갈\Documents\java\HelloWorld"/>
+			<item value="C:\Users\갈\Documents\java\for"/>
+			<item value="C:\Users\갈\Documents\java\Elearning"/>
+			<item value="C:\Users\갈\Documents\java\continue"/>
+			<item value="C:\Users\갈\Documents\java\Cast"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

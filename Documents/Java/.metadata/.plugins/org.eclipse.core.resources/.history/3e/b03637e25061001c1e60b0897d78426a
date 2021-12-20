@@ -1,0 +1,17 @@
+package cls;
+
+public class Exercise9_2 {
+public static void main(String[] args) {
+		
+		Point3D p1 = new Point3D(1,2,3); 
+		Point3D p2 = new Point3D(1,2,3);
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println("p1==p2?"+(p1==p2));	// 인스턴스가 달라서 false가 나온다.
+		System.out.println("p1.equals(p2)?"+(p1.equals(p2))); 
+		
+		Object obj = new Point3D();
+		Point3D p3d = (Point3D)obj;		// obj의 주소를 p3d에 대입
+
+	}
+}

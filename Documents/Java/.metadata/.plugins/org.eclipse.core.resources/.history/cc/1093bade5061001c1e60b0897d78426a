@@ -1,0 +1,51 @@
+package dto;
+
+public class MyClass {
+	private int num;
+	private String name;
+	
+	private double height;
+	
+	public MyClass() {
+	}
+	
+	public MyClass(int num, String name,  double height) {
+		this.num = num;
+		this.name = name;
+		this.height = height;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getnum() {
+		return num;
+	}
+
+	public void setAge(int num) {
+		this.num = num;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	@Override
+	public String toString() {
+//		return "MyClass [name=" + name + ", num=" + num + ", height=" + height + "]";
+		System.out.println("MyClass [name=" + name + ", num=" + num + ", height=" + height + "]");
+		return "";
+	}
+	
+	
+	
+}

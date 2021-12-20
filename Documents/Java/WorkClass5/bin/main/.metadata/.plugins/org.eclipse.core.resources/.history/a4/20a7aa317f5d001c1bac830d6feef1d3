@@ -1,0 +1,40 @@
+package cls4;
+
+public class HealthRate extends Health {
+	private String HR[];
+	private String B;
+	public HealthRate(String name, double height, double weight) {
+		super(name, height, weight);
+		
+	}
+
+	public Double SW(double height) {
+		double SW = (height-100) * 0.9;
+		return SW;
+	}
+	
+	public String B(double SW, double weight) {
+		int b = (weight - SW(height)) / SW(height)*100;
+		String HR[] = {"정상", "과체중", "비만"};
+		
+			if (b <= 0.1) {
+				System.out.println("HR[0]");
+			} 
+			else if (b >= 0.1 && b < 0.2) {
+				System.out.println("HR[1]");
+			}
+			else {
+				System.out.println("HR[2]");
+			}
+		
+		return B;
+	}
+	
+	@Override
+	public void prn() {
+		System.out.printf("%s님의 키 %d , 몸무게 %d %s입니다.\n", name, height, weight, B);
+	}
+	
+	
+	
+}

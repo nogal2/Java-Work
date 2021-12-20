@@ -1,0 +1,16 @@
+package main;
+
+import cls.MyClass;
+import inter.Myinterface;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+//		Myinterface myi = new Myinterface();
+		
+		MyClass mycls = new MyClass();
+		mycls.method();
+	}
+
+}

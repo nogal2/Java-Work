@@ -1,0 +1,74 @@
+package dao;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+import dto.StudentDto;
+//데이터 접근, 관리(학생 기록부)
+public class StudentDao {
+	Scanner sc = new Scanner(System.in);
+	
+	
+	private StudentDto Student[] = new StudentDto[20];
+	private int count;
+	
+	
+	
+	public StudentDao() {
+		count = 0;
+	}
+	
+	// CRUD
+	public void insert() {	// 학생 추가
+		System.out.print("번호 = ");
+		int number = sc.nextInt();
+		
+		System.out.print("이름 = ");
+		String name = sc.next();
+		
+		System.out.print("신장 = ");
+		double height= sc.nextDouble();
+		
+		System.out.print("영어 점수 = ");
+		int eng = sc.nextInt();
+		
+		System.out.print("수학 점수 = ");
+		int math = sc.nextInt();
+		
+		Student[count] = new StudentDto(number, name, height, eng, math);
+		count++;
+		//반복문을 안써도 되는 이유는 다시 insert() 를 시작했을때 카운트 수가 올라가서 다음 배열로 작성이 되기 때문이다.
+	}
+	
+	public void delete() {	// 학생 삭제
+		System.out.println();
+		
+	}
+	
+	public void select() {	// 검색
+
+	}
+	
+	public void update() {	// 수정
+
+	}
+	
+	public void alldata() {	// 확인용
+		int i=0;
+		boolean a = true;
+		while(a=true) {
+			this.Student[i].toString();
+			
+			System.out.println(Student[i]);
+			i++;
+			if(i == Student.length) {
+				a=false;
+			}
+	
+		}
+		
+		
+		
+	}
+	
+}

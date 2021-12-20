@@ -1,0 +1,25 @@
+package study;
+
+import java.util.Scanner;
+
+public class forwhile2439 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		String[] star = new String[N];
+		String[] space = new String[N];
+		int k; //공백
+		String star1 = "*";
+		String space1 = " ";
+		for (int i = 0; i < star.length; i++) {
+			star[i] = star[i]+ star1;
+			
+			System.out.println(star[i]);
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package cls;
+
+public class ParentClass {
+	private int number;
+	private String name;
+	
+	public void parentMethod() {
+		System.out.println("ParentClass parentMethod()");
+	}
+}

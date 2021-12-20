@@ -1,0 +1,23 @@
+package main;
+
+import cls.MyClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	
+		/*
+			static:	정적	<=> 동적(dynamic)
+			
+			variable
+			method
+		*/
+		
+		MyClass cls = new MyClass();
+		
+		cls.func();
+		cls.func();
+		
+	}
+
+}

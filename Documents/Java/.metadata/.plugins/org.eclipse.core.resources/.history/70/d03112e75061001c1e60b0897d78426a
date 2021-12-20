@@ -1,0 +1,17 @@
+package main;
+
+import cls.ChildOndClass;
+import cls.ParentClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+//		ChildOndClass child = new ChildOndClass();
+//		child.Method();
+		
+		ParentClass pc = new ChildOndClass();	// 생성된 객체는 자식 클래스. 근데 인스턴스는 ParentClass에 생성됨.
+		pc.Method();
+	}
+
+}

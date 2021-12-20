@@ -1,0 +1,21 @@
+package cls3;
+
+public class MovieWork extends Movie{
+	private int content;	//작품성 
+	private int popul;		//대중성
+d	private	int script;		//대본
+	
+	
+	public MovieWork(String title, int director, int acter) {
+		super(title, director, acter);
+		
+	}
+
+	@Override 
+	public void display() { //여기를 구현하세요. 
+		super.display();
+		
+		
+		
+	}
+}

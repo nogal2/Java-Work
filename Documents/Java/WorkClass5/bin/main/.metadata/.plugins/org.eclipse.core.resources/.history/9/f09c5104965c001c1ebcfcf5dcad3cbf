@@ -1,0 +1,17 @@
+
+public class work1Class {
+	int sum;
+	int avg;
+	int kor;
+	int eng;
+	int math;
+	String name;
+	
+		
+	int getTotal (int kor, int eng, int math) {
+		return kor+eng+math;
+	}
+	double getAverage() {
+		return 0.1;
+	}
+}

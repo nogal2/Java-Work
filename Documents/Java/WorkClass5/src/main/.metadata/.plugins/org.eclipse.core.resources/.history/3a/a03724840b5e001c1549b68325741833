@@ -1,0 +1,18 @@
+package main;
+
+import abstractCls.AbstractClass;
+import cls.MyClass;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+//		AbstractClass ac = new AbstractClass() {};  = > 추상클래스는 생성안됨
+		
+		MyClass mycls = new MyClass();
+		mycls.method();
+		mycls.abstractMethod();
+
+	}
+
+}

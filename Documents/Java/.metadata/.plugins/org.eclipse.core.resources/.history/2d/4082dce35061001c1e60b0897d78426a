@@ -1,0 +1,12 @@
+package cls;
+
+class Tank extends Unit {// 탱크
+	
+	public void move() {
+		move(x,y);
+		stop();
+	} 
+	
+	void changeMode() { System.out.println("시즈모드");}
+
+}

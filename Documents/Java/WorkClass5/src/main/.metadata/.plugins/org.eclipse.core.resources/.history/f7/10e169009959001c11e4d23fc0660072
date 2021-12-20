@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Menu >>>");
+		System.out.println("1. 10¼ö -> 2Áø¼ö");
+		System.out.println("2. 10Áø¼ö -> 8Áø¼ö");
+		System.out.println("3. 10Áø¼ö -> 16Áø¼ö");
+		System.out.println("4. 2Áø¼ö -> 10Áø¼ö");
+		System.out.println("5. 8Áø¼ö -> 10Áø¼ö");
+		System.out.println("6. 16Áø¼ö -> 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.print("ï¿½ï¿½ï¿½Ï½Ã´ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½ >> ");
+		int work = sc.nextInt();
+		System.out.print("ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ >> ");
+		String numStr = sc.next();
+		
+		switch(work) {
+			case 1:
+				//int menu1 = Integer.parseInt(numStr);
+				//String num2 = Integer.toBinaryString(menu1);
+				int menu1;
+				String num2;
+				num2 = decToBin(numStr);
+				System.out.println("10ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + num2 + "ï¿½Ô´Ï´ï¿½");
+				break;
+			case 2:
+				int menu2 = Integer.parseInt(numStr);
+				String num8 = Integer.toOctalString(menu2);
+				System.out.println("10ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + num8 + "ï¿½Ô´Ï´ï¿½");
+				break;
+			case 3:
+				int menu3 = Integer.parseInt(numStr);
+				String num16 = Integer.toHexString(menu3);
+				System.out.println("10ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + num16 + "ï¿½Ô´Ï´ï¿½");
+				break;
+			case 4:
+				int A = Integer.parseInt(numStr, 2);
+				System.out.println("2ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + A + "ï¿½Ô´Ï´ï¿½");
+				break;
+			case 5:
+				int B = Integer.parseInt(numStr, 8);
+				System.out.println("8ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + B + "ï¿½Ô´Ï´ï¿½");
+				break;
+			case 6:
+				int C = Integer.parseInt(numStr, 16);
+				System.out.println("16ï¿½ï¿½ï¿½ï¿½ " + numStr + "ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + C + "ï¿½Ô´Ï´ï¿½");
+				break;
+		}
+	}
+	
+	static String decToBin(String numStr) {
+		int menu1 = Integer.parseInt(numStr);
+		String num2 = Integer.toBinaryString(menu1);
+		return num2;
+	}
+
+}

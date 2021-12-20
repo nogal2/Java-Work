@@ -1,0 +1,16 @@
+package cls3;
+
+public class MovieWork extends Movie{
+	
+	
+	
+	public MovieWork(String title, int director, int acter) {
+		super(title, director, acter);
+		
+	}
+
+	@Override 
+	public void display() { //여기를 구현하세요. 
+				
+	}
+}

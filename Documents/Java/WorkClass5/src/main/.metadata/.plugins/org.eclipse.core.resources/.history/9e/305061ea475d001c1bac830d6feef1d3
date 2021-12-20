@@ -1,0 +1,9 @@
+package cls;
+
+public class ParentClass {
+	
+	public ParentClass() {
+		System.out.println("ParentClass ParentClass()");
+	}
+	
+}

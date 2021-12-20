@@ -1,0 +1,32 @@
+package study;
+
+import java.util.Scanner;
+
+public class array3052 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	//	int a[] = new int[10];
+		/*
+		for (int i = 0; i < a.length; i++) {
+			a[i] = sc.nextInt();
+		}
+		/**/
+		int a[] = {1, 2, 5, 8, 0, 2, 4, 5, 2, 0};
+		int b[] = new int[10];
+		for (int i = 0; i < a.length; i++) {
+			b[i] = a[i] % 42;
+		}
+		int count = 0;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 1+i; j < a.length; j++) {
+				if(b[i] == b[j]) {
+					count++;
+				}
+			}
+		}
+		System.out.println(a.length-count);
+		
+	}
+
+}

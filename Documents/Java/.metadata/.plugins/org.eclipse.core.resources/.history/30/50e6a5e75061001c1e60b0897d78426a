@@ -1,0 +1,13 @@
+package cls;
+
+public class YouClass {
+
+	public void memberMethod() {
+		System.out.println("YouClass memberMethod");
+	}
+	
+	public static void staticMethod() {
+		System.out.println("YouClass staticMethod");
+	}
+	
+}

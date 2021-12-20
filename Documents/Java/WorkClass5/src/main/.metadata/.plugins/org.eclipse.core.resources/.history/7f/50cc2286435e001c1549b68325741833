@@ -1,0 +1,12 @@
+package cls;
+
+class Tank extends Unit {// 탱크
+	
+	public void move() {
+		move(x,y);
+		stop();
+	} 
+	
+	void changeMode() { /* 공격모드를  변환한다. */}
+
+}

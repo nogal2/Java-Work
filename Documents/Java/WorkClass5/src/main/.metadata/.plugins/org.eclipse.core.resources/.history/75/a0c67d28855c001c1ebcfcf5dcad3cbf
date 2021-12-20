@@ -1,0 +1,11 @@
+package constructor;
+
+public class MyClass {
+	// 멤버변수
+	int number;
+	String name;
+	
+	MyClass() {	//constructor
+		System.out.println("MyClass 기본생성자");
+	}
+}

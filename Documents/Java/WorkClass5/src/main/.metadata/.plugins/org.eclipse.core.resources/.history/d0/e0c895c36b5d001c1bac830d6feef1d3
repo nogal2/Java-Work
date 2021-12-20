@@ -1,0 +1,24 @@
+package cls1;
+
+public class ClassTest_2 extends ClassTest_1 {
+	private String department;
+	
+	
+	
+	public ClassTest_2() {
+		name= "이지나";
+		salary = 3000;
+		department= "교육부";
+		
+		
+	}
+	
+	@Override
+	public void getInformation() { 
+		
+		System.out.println("이름:" + name + " 연봉:" + salary); 
+
+	} 
+	
+
+}

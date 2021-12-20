@@ -1,0 +1,21 @@
+import java.io.File;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+			File:	저장 매체
+					Database(file)
+		*/
+		
+		File file = new File("c:\\");	// file에 대한 객체를 잡아준 것.
+		
+		// 파일 조사(검색)
+		String filelist[] = file.list();
+		for (int i = 0; i < filelist.length; i++) {
+			System.out.println(filelist[i]);
+		}
+
+	}
+
+}

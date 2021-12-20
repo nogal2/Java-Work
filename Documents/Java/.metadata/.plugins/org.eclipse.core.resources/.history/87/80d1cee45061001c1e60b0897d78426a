@@ -1,0 +1,19 @@
+package main;
+
+import cls.NameCard;
+import cls.PrintNameCard;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		
+		NameCard namecard = new NameCard("홍길동", "123-4567", "hgd@naver.com");
+		
+		namecard.setPrintNameCard(new PrintNameCard());
+		namecard.print();//Namecard 의 print호출이고 그 print는  PNC클래스의 print를 호출한다.
+				
+
+	}
+
+}

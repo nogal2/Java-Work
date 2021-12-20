@@ -1,0 +1,9 @@
+package cls;
+
+public class ChildOndClass extends ParentClass{
+	
+	@Override
+	public void Method() {
+		System.out.println("ChildOndClass Method()");
+	}
+}

@@ -1,0 +1,24 @@
+package cls;
+
+public class ChildClass extends ParentClass{
+
+	/*
+		Over Ride:	부모 클래스에서 상속받은 메소드를 고쳐 기입하는 것
+		조건
+		이름과 메소드의 이름과 매개변수, 리턴값이 동일해야한다.
+	*/
+	//OverRide
+	@Override	// == name space -> 주석, 표시
+	public void pMethod() {
+	//	super.pMethod();
+		
+		System.out.println("ChildClass pMethod()");
+		
+		
+	}
+	
+	public void func() {
+		pMethod();
+	}
+	
+}
