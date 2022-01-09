@@ -1,0 +1,92 @@
+package study;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class self {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String Sort;
+		int sort[];
+		int user;
+		
+		while(true) {
+			System.out.println("정렬할 개수를 입력하세요= ");
+			Sort = br.readLine();
+			boolean numberOk = true;
+			for (int i = 0; i < Sort.length(); i++) {
+				int n = Sort.charAt(i);
+				if(n<48 || n>57) {
+					numberOk = false;
+					break;
+					// 15를 입력했다고 하면 for문에서 1과 5를 하나씩 char로 바꿔서 아스키코드로 표시가 된다.
+					// 아스키코드로 48~57은 0~9인 숫자이기 때문에 그 값이 아닐 경우에는 for문을 false로 바뀌고 for문을 빠져나가 계속 반복한다.
+				}
+			}
+			if(numberOk == true) {
+				break;
+			}
+			System.out.println("숫자를 정확히 입력해주세요.");
+		}
+		
+		user = Integer.parseInt(Sort);
+		
+		// 각각의 숫자 값
+		sort = new int[user];
+		System.out.println("숫자를 " + user + "개 입력해주세요.");
+		for (int i = 0; i < sort.length; i++) {
+			sort[i] = Integer.parseInt(br.readLine());
+		}
+		
+		String cend;
+		int cendint;
+		
+		while(true) {
+			System.out.println("원하시는 정렬 방식을 숫자로 입력해 주세요. \n1 오름차순 \n2 내림차순 \n= ");
+			
+			cend = br.readLine();
+			boolean numberOk = true;
+			for (int i = 0; i < cend.length(); i++) {
+				int n = cend.charAt(i);
+				if (n < 49 || n > 50) {
+					numberOk=false;
+					break;
+				}
+			}
+			if (numberOk == true) {
+				break;
+			}
+			System.out.println("1 또는 2를 입력해주세요.");
+			// numberOk가 false 인거랑 while(true) 인거랑은 관계없음. while문에 true를 넣으면 break하지 않는이상 무한루프임.
+		}
+		
+		cendint = Integer.parseInt(cend);
+		
+		int temp1;
+		if (cendint == 1 ) {
+			for (int i = 0; i < sort.length-1; i++) {
+				for (int j = 0; j < sort.length; j++) {
+					if(sort[i] > sort[j]) {
+						temp1 = sort[i];
+						sort[i]=sort[i];
+						sort[j]=temp1;
+					}
+				}
+			}
+		} else {
+			for (int i = 0; i < sort.length-1; i++) {
+				for (int j = 0; j < sort.length; j++) {
+					if(sort[i] < sort[j]) {
+						temp1 = sort[i];
+						sort[i]=sort[i];
+						sort[j]=temp1;
+					}
+				}
+			}
+		}
+		
+	}
+}
